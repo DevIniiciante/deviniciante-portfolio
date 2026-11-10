@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#081329">
+  <title>DevIniciante | Sites sob medida e portfólio de Victor Oliveira Lima</title>
+  <meta name="description" content="A DevIniciante cria sites personalizados e experiências digitais interativas. Conheça os projetos de Victor Oliveira Lima e solicite um orçamento.">
+  <link rel="canonical" href="https://deviniiciante.github.io/deviniciante-portfolio/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="DevIniciante — Ideias ganham forma">
+  <meta property="og:description" content="Sites personalizados e experiências digitais por Victor Oliveira Lima.">
+  <meta property="og:url" content="https://deviniiciante.github.io/deviniciante-portfolio/">
+  <meta property="og:image" content="https://deviniiciante.github.io/deviniciante-portfolio/og.png">
+  <meta property="og:image:alt" content="DevIniciante sobre fundo azul com órbitas luminosas">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="gsap.min.js" defer></script>
+  <script src="ScrollTrigger.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <header class="header">
+    <div class="shell header-inner">
+      <a class="brand" href="#inicio"><img src="mark.svg" width="32" height="32" alt=""><span>Dev<span>Iniciante</span></span></a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="navigation" hidden>Menu <span aria-hidden="true">+</span></button>
+      <nav id="navigation" class="navigation" aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a><a href="#projetos">Projetos</a><a href="#servicos">Serviços</a>
+        <a class="nav-cta" href="#contato">Vamos conversar <span aria-hidden="true"><svg class="arrow-icon" aria-hidden="true" viewBox="0 0 16 16" width="15" height="15"><path d="M4 12 12 4M5 4h7v7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+      </nav>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+  </header>
+  <main id="conteudo" tabindex="-1">
+    <section class="hero dark" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="shell hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow hero-enter"><span class="live-dot"></span> Desenvolvimento web independente</p>
+          <h1 id="hero-title"><span class="hero-mask"><span class="hero-enter">Ideias ganham</span></span><span class="hero-mask"><span class="hero-enter gradient">forma.</span></span><span class="hero-mask"><span class="hero-enter hero-second">Experiências ganham vida.</span></span></h1>
+          <p class="hero-lede hero-enter">Na DevIniciante, criatividade e desenvolvimento se encontram para transformar ideias em experiências digitais únicas.</p>
+          <div class="actions hero-enter"><a class="button primary" href="#projetos">Explorar projetos <span aria-hidden="true"><svg class="arrow-icon" aria-hidden="true" viewBox="0 0 16 16" width="15" height="15"><path d="m4 4 8 8M5 12h7V5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="button outline" href="#contato">Solicitar um site <span aria-hidden="true"><svg class="arrow-icon" aria-hidden="true" viewBox="0 0 16 16" width="15" height="15"><path d="M4 12 12 4M5 4h7v7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-label"><span>FIG. 01</span><span>FORMA DIGITAL</span></div>
+          <div class="orb-shift"><img src="orbit.svg" width="660" height="620" alt=""><span class="satellite"></span></div>
+          <div class="art-coordinates"><span>BR · DF</span><span>01 / 03</span></div>
+        </div>
+      </div>
+      <div class="shell hero-bottom"><a href="#sobre"><span class="scroll-arrow" aria-hidden="true">↓</span> Role para explorar</a><span>Design · Código · Movimento</span></div>
+    </section>
+
+    <section class="about light block" id="sobre" aria-labelledby="about-title">
+      <div class="shell editorial">
+        <p class="eyebrow" data-reveal><span>01 /</span> Sobre a DevIniciante</p>
+        <div><h2 id="about-title" data-reveal>O digital também pode ter <em>personalidade.</em></h2>
+        <div class="about-text"><p data-reveal>A DevIniciante cria sites que carregam a identidade de cada projeto. A proposta é unir uma estética própria a uma navegação clara, com atenção especial a como a experiência funciona no celular.</p><p data-reveal>O movimento faz parte desse trabalho. Uma transição pode orientar a leitura, uma interação pode revelar um detalhe e um botão pode deixar claro qual é o próximo passo.</p></div></div>
+      </div>
+    </section>
+
+    <section class="founder light block" id="fundador" aria-labelledby="founder-title">
+      <div class="shell founder-layout">
+        <div class="monogram" aria-hidden="true"><span>PERFIL / DF, BR</span><strong>VL<span>.</span></strong><span>VICTOR OLIVEIRA LIMA</span></div>
+        <div class="founder-copy">
+          <p class="eyebrow" data-reveal><span>02 /</span> Conheça o desenvolvedor</p>
+          <h2 id="founder-title" data-reveal>Eu sou o Victor.</h2>
+          <p data-reveal>Meu nome é Victor Oliveira Lima. Sou estudante, desenvolvedor front-end e fundador da DevIniciante. Comecei pela lógica de programação e encontrei no front-end um jeito de experimentar com design, código e movimento na mesma tela.</p>
+          <ol class="timeline">
+            <li data-reveal><strong>Primeiros passos</strong><span>Concluí o curso de lógica de programação com Python pela Santander Academy.</span></li>
+            <li data-reveal><strong>Da teoria à interface</strong><span>Estudo HTML e CSS pelo Curso em Vídeo e aplico JavaScript em projetos para a web.</span></li>
+            <li data-reveal><strong>Da interface ao projeto real</strong><span>Criei a DevIniciante para desenvolver sites sob medida e seguir explorando o que a web pode fazer.</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="tools dark block" id="tecnologias" aria-labelledby="tools-title">
+      <div class="shell tool-layout">
+        <div><p class="eyebrow" data-reveal><span>03 /</span> Tecnologias</p><h2 id="tools-title" data-reveal>Da ideia<br>ao <em>código.</em></h2><p class="section-lede" data-reveal>As ferramentas mudam conforme o projeto. A base é entender o que a interface precisa fazer.</p></div>
+        <div class="tool-list">
+          <details open data-reveal><summary><span>01</span> Interfaces web <i aria-hidden="true"></i></summary><p>HTML5, CSS3 e JavaScript na estrutura, no visual e nas interações dos sites.</p></details>
+          <details data-reveal><summary><span>02</span> Projetos interativos <i aria-hidden="true"></i></summary><p>Node.js, Express e Socket.IO em experimentos em tempo real. Phaser em protótipos de jogos.</p></details>
+          <details data-reveal><summary><span>03</span> Versionamento e publicação <i aria-hidden="true"></i></summary><p>Git e GitHub para acompanhar alterações e publicar projetos.</p></details>
+          <details data-reveal><summary><span>04</span> Formação e estudos <i aria-hidden="true"></i></summary><p>Python como base de estudo para lógica de programação.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="work light block" id="projetos" aria-labelledby="work-title">
+      <div class="shell">
+        <p class="eyebrow" data-reveal><span>04 /</span> Portfólio</p>
+        <div class="section-head"><h2 id="work-title" data-reveal>Trabalhos <em>selecionados.</em></h2><p data-reveal>Do cardápio de um bar a um presente interativo. Três ideias com três jeitos de navegar.</p></div>
+        <nav class="project-index" aria-label="Ir para um projeto"><a href="#snooker"><span>01</span> Snooker Bar</a><a href="#real"><span>02</span> Real Variedades</a><a href="#victor-ana"><span>03</span> Victor &amp; Ana</a></nav>
+        <article class="case case-snooker" id="snooker">
+          <div class="case-media snooker-media" data-tilt data-reveal><span class="media-caption">01 / HOSPITALIDADE</span><img src="snooker.webp" alt="Captura da página inicial do Snooker Bar, com chamada para o cardápio e ilustração de sinuca" width="1100" height="756" loading="lazy" decoding="async"><span class="media-foot">CARDÁPIO · LOCALIZAÇÃO</span></div>
+          <div class="case-copy"><p class="eyebrow" data-reveal>01 / Site para negócio</p><h3 data-reveal>Snooker Bar</h3><p data-reveal>Uma página para encontrar o cardápio digital, as redes sociais e o endereço do bar, tanto antes de sair de casa quanto à mesa.</p><a class="text-link" href="https://snooker-bar.pages.dev/">Visitar Snooker Bar <span aria-hidden="true"><svg class="arrow-icon" aria-hidden="true" viewBox="0 0 16 16" width="15" height="15"><path d="M4 12 12 4M5 4h7v7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></div>
+        </article>
+        <article class="case case-real" id="real">
+          <div class="case-media real-media" data-tilt data-reveal><span class="media-caption">02 / COMÉRCIO LOCAL</span><img src="real.webp" alt="Captura da página inicial da Real Variedades, com vitrine ilustrativa de eletrônicos" width="1100" height="756" loading="lazy" decoding="async"><span class="media-foot">PRESENÇA DIGITAL</span></div>
+          <div class="case-copy"><p class="eyebrow" data-reveal>02 / Site demonstrativo</p><h3 data-reveal>Real Variedades</h3><p data-reveal>Um conceito de site para a loja de variedades, com uma vitrine demonstrativa de produtos, categorias navegáveis e adaptação para celular.</p><a class="text-link" href="https://real-variedades.pages.dev/">Visitar Real Variedades <span aria-hidden="true"><svg class="arrow-icon" aria-hidden="true" viewBox="0 0 16 16" width="15" height="15"><path d="M4 12 12 4M5 4h7v7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></div>
+        </article>
+        <article class="case case-ana" id="victor-ana">
+          <div class="case-media ana-media" data-tilt data-reveal><span class="media-caption">03 / EXPERIÊNCIA PESSOAL</span><img src="heart.svg" width="280" height="220" alt="" loading="lazy" decoding="async"><span class="media-foot">ANIMAÇÕES · JOGOS</span></div>
+          <div class="case-copy"><p class="eyebrow" data-reveal>03 / Projeto pessoal</p><h3 data-reveal>Victor &amp; Ana</h3><p data-reveal>Um presente em forma de site. Animações, jogos e pequenos momentos de descoberta fazem parte da experiência.</p><a class="text-link" href="https://victorloliveiralima-bot.github.io/victor-e-ana/">Visitar Victor &amp; Ana <span aria-hidden="true"><svg class="arrow-icon" aria-hidden="true" viewBox="0 0 16 16" width="15" height="15"><path d="M4 12 12 4M5 4h7v7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="services dark block" id="servicos" aria-labelledby="services-title">
+      <div class="shell service-layout">
+        <div><p class="eyebrow" data-reveal><span>05 /</span> Serviços</p><h2 id="services-title" data-reveal>Seu projeto,<br><em>do seu jeito.</em></h2><p class="section-lede" data-reveal>O orçamento considera o objetivo do site, o conteúdo e as funcionalidades do seu projeto.</p><a class="button primary" href="#contato">Solicitar orçamento <span aria-hidden="true"><svg class="arrow-icon" aria-hidden="true" viewBox="0 0 16 16" width="15" height="15"><path d="M4 12 12 4M5 4h7v7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></div>
+        <div class="service-list">
+          <details data-reveal><summary><span>01</span> Sites personalizados <i aria-hidden="true"></i></summary><p>Uma estrutura feita para a sua ideia, do conteúdo à forma como as pessoas navegam.</p></details>
+          <details data-reveal><summary><span>02</span> Landing pages <i aria-hidden="true"></i></summary><p>Uma página para explicar uma oferta, divulgar um lançamento ou facilitar o primeiro contato.</p></details>
+          <details data-reveal><summary><span>03</span> Sites institucionais <i aria-hidden="true"></i></summary><p>Apresente a história, os serviços e os canais de contato da sua marca em um só lugar.</p></details>
+          <details data-reveal><summary><span>04</span> Portfólios profissionais <i aria-hidden="true"></i></summary><p>Dê espaço ao seu trabalho com projetos apresentados em contexto e fáceis de explorar.</p></details>
+          <details data-reveal><summary><span>05</span> Páginas para negócios <i aria-hidden="true"></i></summary><p>Reúna informações como catálogo, cardápio, localização e canais de atendimento.</p></details>
+          <details data-reveal><summary><span>06</span> Experiências interativas <i aria-hidden="true"></i></summary><p>Crie uma página com animações, surpresas ou interações que façam sentido para a sua ideia.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="process light block" id="processo" aria-labelledby="process-title">
+      <div class="shell"><p class="eyebrow" data-reveal><span>06 /</span> Processo criativo</p><h2 id="process-title" data-reveal>Da conversa à <em>publicação.</em></h2>
+        <ol class="steps">
+          <li data-reveal><span>01</span><h3>Entender a ideia</h3><p>Conhecer seu projeto, seu público e o que o site precisa resolver.</p></li>
+          <li data-reveal><span>02</span><h3>Planejar a experiência</h3><p>Organizar conteúdo, definir a direção visual e pensar no caminho do visitante.</p></li>
+          <li data-reveal><span>03</span><h3>Desenvolver e aperfeiçoar</h3><p>Construir, testar em telas diferentes e ajustar os detalhes com você.</p></li>
+          <li data-reveal><span>04</span><h3>Publicar o projeto</h3><p>Colocar o site no ar e conferir se tudo funciona no endereço final.</p></li>
+        </ol>
+      </div>
+    </section>
+    <section class="contact dark block" id="contato" aria-labelledby="contact-title">
+      <div class="contact-orbits" aria-hidden="true"></div>
+      <div class="shell contact-inner"><p class="eyebrow" data-reveal><span>07 /</span> Próximo projeto</p><h2 id="contact-title" data-reveal>Sua ideia merece mais<br> do que um <em>site comum.</em></h2><p data-reveal>Vamos criar uma experiência digital que represente o seu projeto.</p>
+      <div class="actions"><a class="button primary" data-magnetic href="https://wa.me/5561993257747?text=Ol%C3%A1%21%20Quero%20conversar%20sobre%20um%20projeto%20personalizado%20da%20DevIniciante%20Studio.">Solicitar orçamento no WhatsApp <span aria-hidden="true"><svg class="arrow-icon" aria-hidden="true" viewBox="0 0 16 16" width="15" height="15"><path d="M4 12 12 4M5 4h7v7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></div></div>
+    </section>
+  </main>
+  <footer class="footer dark">
+    <div class="shell">
+      <div class="footer-top"><div><a class="brand" href="#inicio"><img src="mark.svg" alt="" width="32" height="32"><span>Dev<span>Iniciante</span></span></a><p>Desenvolvimento web independente<br>Distrito Federal, Brasil.</p></div>
+      <nav aria-label="Navegação do rodapé"><a href="#sobre">Sobre</a><a href="#projetos">Projetos</a><a href="#servicos">Serviços</a><a href="#contato">Contato</a></nav>
+      <nav aria-label="Redes e loja"><a href="https://www.instagram.com/deviniiciante/">Instagram <svg class="arrow-icon" aria-hidden="true" viewBox="0 0 16 16" width="15" height="15"><path d="M4 12 12 4M5 4h7v7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="https://www.tiktok.com/@devinciante_">TikTok <svg class="arrow-icon" aria-hidden="true" viewBox="0 0 16 16" width="15" height="15"><path d="M4 12 12 4M5 4h7v7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="https://deviniiciante.github.io/loja.html">Loja <svg class="arrow-icon" aria-hidden="true" viewBox="0 0 16 16" width="15" height="15"><path d="M4 12 12 4M5 4h7v7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="https://deviniiciante.github.io/">Link na bio <svg class="arrow-icon" aria-hidden="true" viewBox="0 0 16 16" width="15" height="15"><path d="M4 12 12 4M5 4h7v7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></nav></div>
+      <div class="footer-bottom"><small>© <span id="year">2026</span> DevIniciante</small><button type="button" id="motion-toggle" aria-pressed="false" hidden>Reduzir animações</button><a href="#inicio">Voltar ao topo <svg class="arrow-icon" aria-hidden="true" viewBox="0 0 16 16" width="15" height="15"><path d="M8 13V3m-4 4 4-4 4 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+    </div>
+  </footer>
+</body>
+</html>
