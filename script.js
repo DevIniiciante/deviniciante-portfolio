@@ -54,6 +54,20 @@ function markProject() {
 window.addEventListener("hashchange", markProject);
 markProject();
 
+const lab = document.querySelector("#lab-stage");
+const labToggle = document.querySelector("#lab-toggle");
+const labNote = document.querySelector("#lab-note");
+
+labToggle.hidden = false;
+labToggle.addEventListener("click", () => {
+  const expanded = labToggle.getAttribute("aria-pressed") === "false";
+  lab.dataset.view = expanded ? "camadas" : "montado";
+  labToggle.setAttribute("aria-pressed", String(expanded));
+  labNote.textContent = expanded
+    ? "Camadas separadas: estrutura, design e interface final."
+    : "Uma interface feita de estrutura, design e interação.";
+});
+
 const motionToggle = document.querySelector("#motion-toggle");
 const motionPreference = matchMedia("(prefers-reduced-motion: reduce)");
 const root = document.documentElement;
@@ -130,17 +144,24 @@ function activateEffects() {
 
     gsap.to(".scroll-progress", { scaleX: 1, ease: "none", scrollTrigger: { start: 0, end: "max", scrub: true } });
     gsap.fromTo(".steps", { "--draw": 0 }, { "--draw": 1, ease: "none", scrollTrigger: { trigger: ".steps", start: "top 86%", end: "bottom 68%", scrub: true } });
-    gsap.to(".hero-art .orb-shift", { y: 38, ease: "none", scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: .35 } });
+    gsap.to(".lab-backdrop", { y: 32, ease: "none", scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: .35 } });
 
     if (finePointer.matches) {
       const hero = document.querySelector(".hero");
-      trackPointer(hero, hero.querySelector(".hero-art img"), "translate", 19, signal);
+      trackPointer(hero, hero.querySelector(".lab-scene"), "translate", 23, signal);
       for (const card of document.querySelectorAll("[data-tilt]")) {
         trackPointer(card, card, "tilt", 5, signal);
       }
-      const magnet = document.querySelector("[data-magnetic]");
-      trackPointer(magnet, magnet, "translate", 7, signal);
+      for (const magnet of document.querySelectorAll("[data-magnetic]")) {
+        trackPointer(magnet, magnet, "translate", 7, signal);
+      }
     }
+
+    gsap.fromTo(".founder-story", { "--story-progress": 0 }, {
+      "--story-progress": 1,
+      ease: "none",
+      scrollTrigger: { trigger: ".founder", start: "top 88%", end: "center center", scrub: .5 },
+    });
 
     for (const details of document.querySelectorAll("details")) {
       details.addEventListener("toggle", () => {
@@ -160,7 +181,7 @@ function activateEffects() {
     gsap.killTweensOf("details p");
     gsap.set("details p", { clearProps: "transform,opacity" });
     context.revert();
-    for (const target of document.querySelectorAll("[data-tilt], [data-magnetic], .hero-art img")) {
+    for (const target of document.querySelectorAll("[data-tilt], [data-magnetic], .lab-scene")) {
       target.style.removeProperty("transform");
       target.style.removeProperty("translate");
     }
